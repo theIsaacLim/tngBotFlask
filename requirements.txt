@@ -1,0 +1,2 @@
+/Applications/PyCharm Edu.app/Contents/bin/Users/isaac_lims_macbook_air/PycharmProjects/tngBotFlask/main.py:1: markovify
+/Applications/PyCharm Edu.app/Contents/bin/Users/isaac_lims_macbook_air/PycharmProjects/tngBotFlask/main.py:2: flask.Flask
