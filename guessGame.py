@@ -4,16 +4,15 @@ from markovify import Text
 
 seed()
 lines = open("firstLines.json").read()
+print("lines read")
 
 file = open("guessGame.json")
 chainJson = file.read()
 file.close()
-
-file = open("tngTemplate.html")
-template = file.read()
-file.close()
+print("json read")
 
 generator = Text.from_json(chainJson)
+print("generated")
 
 true = """
     <div id="aQuestion">
