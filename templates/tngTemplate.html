@@ -6,8 +6,163 @@
   <title>TNG True or False</title>
 
 </head>
-    <link rel="text/css" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+    <link rel="text/css" href="https://raw.githubusercontent.com/theIsaacLim/tngBotFlask/master/styles/style.css">
     <link rel="text/css" href=" {{ fontUrl }} ">
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed');
+:root {
+    --orange: rgb(234, 125, 33);
+    --red: #CC6666;
+    --green: green;
+    --purple: rgb(173,122,226);
+    --blue: #0011EE;
+    --yellow: rgb(250,198,125);
+}
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+  font-family: 'Saira Extra Condensed';
+  background-color: black;
+    font-size: 1em;
+    color:white;
+}
+blockquote {
+    color:black;
+    border-radius: 25px;
+  background: var(--yellow);
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size:1em;
+}
+blockquote:before {
+  color: #ccc;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+    font-size: 2em;
+}
+
+button {
+    background-color: var(--purple);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Saira Extra Condensed';
+    font-size: 2em;
+    transition: 0.2s;
+    width: 49.5%;
+}
+
+#trueButton {
+    align-self: left;
+    background-color: var(--green);
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#falseButton {
+    align-self: right;
+    background-color: var(--red);
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+#trueButton {
+    background-color: var(--green);
+}
+
+
+button:hover {
+    background-color: white;
+    border-radius: 5px;
+    border-color: var(--purple);
+    color: var(--purple);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Saira Extra Condensed';
+    font-size: 2em;
+    transition: 1s;
+}
+
+
+#falseButton:hover {
+    color: var(--red);
+    background-color: white;
+}
+
+
+#trueButton:hover {
+    color: var(--green);
+    background-color: white;
+}
+
+
+#purple {
+    border-radius: 25px;
+  background: var(--orange);
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size:1em;
+}
+
+#true {
+    display: none;
+    border-radius: 25px;
+  background: var(--blue);
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size:1em;
+    transition: 1s;
+}
+#false {
+    display: none;
+    border-radius: 25px;
+  background: var(--blue);
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size:1em;
+    transition: 1s;
+}
+
+#number {
+    font-size: 3em;
+}
+
+
+.blink {
+animation: blink 1s steps(5, start) infinite;
+-webkit-animation: blink 1s steps(5, start) infinite;
+    }
+
+@keyframes blink {
+  to {
+      visibility: hidden;
+      }
+}
+@-webkit-keyframes blink {
+  to {
+      visibility: hidden;
+      }
+}
+</style>
 <script>
 var score = 0;
     var clicked = [];
