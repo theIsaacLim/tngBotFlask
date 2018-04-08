@@ -1,1 +1,1 @@
-worker: python guessGame.py
+web: python guessGame.py

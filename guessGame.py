@@ -53,7 +53,7 @@ def substitute(realOrNot, actualQuote, num):
 
     return rVal
 
-app = Flask(__name__)
+app = Flask(__name__, host='0.0.0.0')
 
 
 @app.route('/')
