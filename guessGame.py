@@ -85,8 +85,4 @@ def generateQuiz():
     #_template = _template.replace("@", finishedSubstitution)
     return render_template("tngTemplate.html", content=Markup(finishedSubstitution), fontUrl="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed", cssUrl="../style.css")
 
-@app.route('/style.css')
-def returnStyle():
-    return app.send_static_file('style.html')
-
 app.run()
