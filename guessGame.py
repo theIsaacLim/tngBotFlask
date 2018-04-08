@@ -53,7 +53,8 @@ def substitute(realOrNot, actualQuote, num):
 
     return rVal
 
-app = Flask(__name__, static_folder="/static")
+app = Flask(__name__)
+
 
 @app.route('/')
 def generateQuiz():
